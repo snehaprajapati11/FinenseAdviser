@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Take Control of Your Finances</title>
+  <link  rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>
+          Personal Expense Tracker
+        </h1>  
+      </header>
+      
+      
+      <nav class="links">
+      <ul>
+      <li><a href="#">Contact Us</a></li>
+       <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html">Home</a></li>
+      </ul>
+      </nav>
+    
+
+
+
+
+        <div class="container">
+            <div class="text-content">
+  <h1>Take Control of Your Finances</h1>
+  <p>Effortlessly track your spending, create budgets, and achieve your financial goals with our user-friendly platform.</p>
+  <button onclick="goToLogin()">Get Started</button>
+  <button onclick="scrollToSection('page3')">Learn More..</button>
+</div>
+<div class="image-content">
+  <img src="honeimg.jpeg" alt="Financial Planning"> </div>
+</div>
+
+<div>
+    <h1 class="secondpage">Smart budgeting and financial Planning</h1>
+    <div class="page" id="page2">
+        <div>
+            <h2>Set Budget Limits</h2>
+            <p>Create personalized budgets for various categories and track your progress towards your goals.</p>
+        </div>
+        <div>
+            <h2>Financial Projections</h2>
+            <p>Forecast your future financial situation and make informed decisions about your spending.</p>
+        </div>
+        <div>
+            <h2>Personalized Recommendations</h2>
+            <p>Receive tailored financial recommendations based on your spending habits and goals.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="page" id="page3">  <h2>Additional Features</h2>
+    <p>Explore advanced financial planning tools, investment tracking, and expert advice to help you make the most of your money.</p>
+    <p>We also offer secure data encryption to protect your financial information.</p>
+</div>
+
+
+<footer>
+    Effortless Expense Tracking | Secure & Transparent | Personalized Support
+    <br><br>
+        &copy; 2025 Personal Expenses Tracker
+  </footer>
+
+
+<script>
+function goToLogin() {
+  window.location.href = "loginpage.html";
+}
+
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+
+</body>
+</html>

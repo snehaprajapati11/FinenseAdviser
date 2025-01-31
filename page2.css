@@ -1,0 +1,96 @@
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+        margin: 0;
+    padding: 0;
+}
+header {
+     background-color: rgb(226, 191, 149);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+ h1 {
+    color: black;
+    margin-top: 2%;
+    text-align: center;
+}
+#expenseForm {
+    margin-top: 7%;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-left: 30%;
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#category{
+    margin-left: 30%;
+
+}
+
+button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:10px;
+    padding-top: -30px;
+    margin-top: -55px;
+  }
+
+  nav ul li {
+
+    /* display: inline-block; */
+    margin: 0 10px;
+    margin-top: 20px;
+    float: right;
+}
+
+  nav ul li a {
+     color: rgb(179, 51, 51);
+    text-decoration: none;
+font-size: 15px;
+font-weight:550;
+ padding: 12px 10px;
+    
+  } 

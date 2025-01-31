@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="page2.css">
+
+</head>
+<body>
+
+<header>
+  <h1>
+    Personal Expense Tracker
+  </h1>  
+</header>
+
+
+<nav class="links">
+<ul>
+<li><a href="#">Contact Us</a></li>
+ <li><a href="about.html">About Us</a></li>
+<li><a href="index.html">Home</a></li>
+</ul>
+</nav>
+
+
+
+    <form id="expenseForm">
+
+    <!-- <h1>Personal Expense Tracker</h1> -->
+        <label for="name">Expense Name:</label>
+        <input type="text" id="name" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" step="0.01" required>
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Food">Food</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Other">Other</option>
+        </select>
+        <button type="submit">Add Expense</button>       
+    </form>
+
+    <h2>Expense List</h2>
+    <table id="expenseTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const expenseForm = document.getElementById('expenseForm');
+        const expenseTable = document.getElementById('expenseTable');
+        const tableBody = expenseTable.querySelector('tbody');
+
+        expenseForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const amount = parseFloat(document.getElementById('amount').value);
+            const category = document.getElementById('category').value;
+
+            // Create a new row in the table
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${name}</td>
+                <td>${amount.toFixed(2)}</td>
+                <td>${category}</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            `;
+
+            tableBody.appendChild(newRow);
+
+            // Clear the form
+            expenseForm.reset();
+        });
+
+        // Add event listeners for edit and delete buttons (you can implement these
+        // functionalities here)
+    </script>
+
+</body>
+</html>
+
+
+
+
+
